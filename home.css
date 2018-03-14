@@ -1,0 +1,92 @@
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+body {
+    font-family: Consolas, monospace;
+    background-image: url(img/bg.jpg);
+}
+
+
+.profile {
+    width: 19%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.image {
+    width: 83px;
+    height: 83px;
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+}
+
+.name {
+    line-height: 83px;
+    /*行距设为与div高度一致*/
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+
+
+#myContent,
+#myContent blink {
+    width: 25%;
+    color: #000000;
+    font-family: courier;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+blink {
+    display: inline;
+}
+
+#contentToWrite {
+    width: 50%;
+
+}
+
+.enter {
+    width: 8%;
+    margin-left: 48%;
+}
+
+.enter img {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    
+}
+#img:hover{
+    cursor:pointer;
+}
+
+.enter img {
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    animation:1s linear 0s myrotate;
+    -webkit-animation:1s linear 0s myrotate;/* Safari and Chrome */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes myrotate{
+    0% {transform:rotate(60deg);}    
+    100%    {transform:rotate(120deg);}
+}
+
+

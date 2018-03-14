@@ -1,0 +1,49 @@
+<html>
+<link rel="icon" type="image/x-icon" href="img/leg.ico" />
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+<link href="home.css" rel="stylesheet" type="text/css" />
+
+<head>
+    <title>爱吃肉的假程序媛</title>
+</head>
+
+<body>
+
+    <div class="profile clearfix">
+        <img class="image" src="/img/avatar.jpg" />
+        <span class="name">Secret</span>
+    </div>
+    <br>
+
+    <div class="contentt">
+        <div class="h11">
+            <div id="myContent">
+            </div>
+            <div id="contentToWrite" style="display: none">Hello, Welcome to my blog.</div>
+        </div>
+
+        <div class="enter">
+            <!--        -->
+            <div class="img">
+
+                <img src="/img/enter.png" id="img" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="/js/home.js">
+    </script>
+    <script type="text/javascript">
+        writeContent(true);
+    </script>
+    <script>
+        $("#img").click(function() {
+            window.location.href = "https://secretlin.github.io/blog/";
+        })
+    </script>
+</body>
+
+</html>
